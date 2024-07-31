@@ -38,3 +38,4 @@ for i, filepath in enumerate(filepaths):
 
 
 print("任务完成")
+print("该喝咖啡了")

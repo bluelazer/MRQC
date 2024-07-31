@@ -233,3 +233,5 @@ if __name__ == "__main__":
         with open(filename2, 'w', encoding='utf-8') as f:
             # 将字典列表写入JSON文件，并使用缩进美化输出
             json.dump(anqc_result_all, f, indent=4, ensure_ascii=False)
+
+print("ANQC已完成")
