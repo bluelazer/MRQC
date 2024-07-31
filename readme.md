@@ -13,6 +13,8 @@ git clone https://github.com/bluelazer/MRQC.git
 ### 3. 运行main.py 直接获取结果
       python main.py
 
+main.py是整个项目的入口，调用get_ANdata.py和ANQC.py完成任务。
 get_ANdata.py是对dataset文件夹中的数据集进行读取，并返回一个json格式的数据集。
 ANQC.py是质量控制的核心代码，其中包含了对病历数据的核查，包括主诉、现病史、既往史、家族史、体格检查、辅助检查等信息的填写是否符合规定， 是否
 缺失信息，是否存在不合理的地方。
+病历信息存放到datas文件夹中，下面每个data文件夹包含一个患者的病历信息。
