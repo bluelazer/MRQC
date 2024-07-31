@@ -19,7 +19,7 @@ for i, filepath in enumerate(filepaths):
     filename1 = f'Andata{i}.json'
     # 使用with语句确保文件正确关闭，并指定编码为UTF-8
     with open(filename1, 'w', encoding='utf-8') as f:
-        # 将字典列表写入JSON文件，并使用缩进美化输出 
+        # 将字典列表写入JSON文件，并使用缩进美化输出
         json.dump(datas, f, indent=4, ensure_ascii=False)
 
 
@@ -35,3 +35,6 @@ for i, filepath in enumerate(filepaths):
     with open(filename2, 'w', encoding='utf-8') as f:
         # 将字典列表写入JSON文件，并使用缩进美化输出
         json.dump(anqc_result_all, f, indent=4, ensure_ascii=False)
+
+
+print("任务完成")
